@@ -13,11 +13,11 @@ public class Tank : MonoBehaviour
             foreach (var collider in affectedColliders)
             {
                 print(collider.name);
-                var rigidBody = collider.GetComponent<Rigidbody>();
-                rigidBody.AddForce((rigidBody.position - transform.position) * explosionForce, ForceMode.Impulse);
+                var cube = collider.GetComponent<Cube>();
+                cube.Throw((cube.transform.position - transform.position) * explosionForce);
             }
         }
-        Destroy(gameObject);
+        // Destroy(gameObject);
     }
     private void OnDrawGizmosSelected()
     {
