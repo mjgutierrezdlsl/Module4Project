@@ -15,6 +15,7 @@ public class TurretController : MonoBehaviour
 
     private void Update()
     {
+        if (_player == null) { return; }
         var lookDirection = (_player.transform.position - transform.position).normalized;
         transform.up = lookDirection;
 
@@ -37,7 +38,7 @@ public class TurretController : MonoBehaviour
             _viewTime += Time.deltaTime;
             if (_viewTime / _timeToHit >= 1f)
             {
-                print("Hit!");
+                _player.Die();
                 _viewTime = 0f;
             }
         }
