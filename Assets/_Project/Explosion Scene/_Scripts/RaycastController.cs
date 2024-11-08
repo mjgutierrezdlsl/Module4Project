@@ -14,7 +14,7 @@ public class RaycastController : MonoBehaviour
 
     private void Update()
     {
-        if (!Input.GetMouseButton(0))
+        if (!Input.GetMouseButtonDown(0))
         {
             return;
         }

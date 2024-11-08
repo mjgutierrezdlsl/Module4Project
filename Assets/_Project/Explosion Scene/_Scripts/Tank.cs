@@ -17,7 +17,7 @@ public class Tank : MonoBehaviour
                 cube.Throw((cube.transform.position - transform.position) * explosionForce);
             }
         }
-        // Destroy(gameObject);
+        Destroy(gameObject);
     }
     private void OnDrawGizmosSelected()
     {

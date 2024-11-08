@@ -21,6 +21,14 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         Instantiate(_deathParticles, transform.position, Quaternion.identity);
+        StartCoroutine(DeathRoutine());
+    }
+    private IEnumerator DeathRoutine()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<TrailRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
     private void OnDestroy()
