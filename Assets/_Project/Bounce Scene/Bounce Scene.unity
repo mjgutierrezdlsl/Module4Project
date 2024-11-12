@@ -148,7 +148,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496199280}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 65165343c2b994528b259094dc42cde9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -254,7 +254,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768856112}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 65165343c2b994528b259094dc42cde9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _throwablePrefabs:
-  - {fileID: 2037722441219426724, guid: 96ff2d20a9cf548688118989d2bece4f, type: 3}
+  - {fileID: 5011545370454284526, guid: 41e96a70ecb1442fe9cc2144657388d2, type: 3}
   spawnCount: 100
   spawnRadius: 5
 --- !u!4 &907888359
@@ -442,7 +442,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958560764}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 65165343c2b994528b259094dc42cde9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -641,7 +641,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387096163}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 65165343c2b994528b259094dc42cde9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -746,7 +746,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471932977}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 65165343c2b994528b259094dc42cde9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -935,8 +935,9 @@ MonoBehaviour:
     m_Bits: 256
   _throwLayer:
     serializedVersion: 2
-    m_Bits: 2048
-  _hitRadius: 5
+    m_Bits: 6144
+  _forceMode: 0
+  _hitRadius: 0.94
   _hitForce: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
